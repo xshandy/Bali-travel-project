@@ -8,6 +8,16 @@
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("../images/IMG_2500.jpeg");
@@ -41,6 +51,25 @@ header a {
   color: rgba(0, 0, 0, 0.916);
 }
 
+main {
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #16445d;
+  opacity: 0.3;
+}
+
+main p {
+  line-height: 1.8;
+}
+
+.munduk-image {
+  max-width: 400px;
+  height: auto;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url("../images/balisign.jpeg");
@@ -52,19 +81,38 @@ footer {
 
 footer h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 
 footer p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   opacity: 0.9;
   line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 
 @media (max-width: 576px) {
   header {
     padding: 60px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
