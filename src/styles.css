@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("../images/IMG_2500.jpeg");
@@ -34,6 +39,28 @@ header a {
   text-decoration: none;
   background: white;
   color: rgba(0, 0, 0, 0.916);
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("../images/balisign.jpeg");
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: cover;
+  color: white;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 24px;
 }
 
 @media (max-width: 576px) {
