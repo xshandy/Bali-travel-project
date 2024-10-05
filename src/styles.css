@@ -13,9 +13,13 @@
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 header {
@@ -57,7 +61,7 @@ main {
 main h2 {
   font-weight: 700;
   font-size: 24px;
-  color: #16445d;
+  color: #0382c6;
   opacity: 0.3;
 }
 
@@ -68,6 +72,46 @@ main p {
 .munduk-image {
   max-width: 400px;
   height: auto;
+}
+
+.secondary-section {
+  background-color: #adc0ca;
+}
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+.text-container h4 {
+  margin-top: 10px;
+}
+
+.text-container p {
+  line-height: 1.5;
 }
 
 footer {
@@ -114,5 +158,19 @@ footer a {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    width: 80%;
+    max-width: 300px;
   }
 }
